@@ -1,0 +1,85 @@
+1.	Arrays wirt Reference type 
+
+	String class (see examples) 
+	http://docs.oracle.com/javase/7/docs/api/java/lang/String.html
+	http://habrahabr.ru/post/260767/
+
+
+	Repeat methods
+	/	\
+     static     non-static
+
+Primitive vs Reference
+ 
+Class - template  https://docs.oracle.com/javase/tutorial/java/concepts/class.html
+	1) only with static methods 
+	2) non-static fields and methods
+
+object(Instance)  https://docs.oracle.com/javase/tutorial/java/concepts/object.html
+	lifecycle of object
+	"this" word 
+
+Split your mind on Creator and User sides!!!
+
+
+Java Code Convention http://www.oracle.com/technetwork/java/codeconventions-150003.pdf
+
+1.1. Visualize all code via http://www.pythontutor.com/visualize.html#mode=edit
+
+Practical part
+2. Написать класс число.
+	- сложение
+	- вычитание
+	- умножение
+	- деление
+	- возведение в степень
+	- вычисление факториала
+	- вычисление остатка от деления
+	- метод который сравнивает два числа
+
+3. Написать класс дробь
+	- сложение дробей
+	- вычитание
+	- умножение
+	- деление
+	- приведение к строке
+	- вывод
+	- метод для сравнения с другой дробью
+
+4. Написать калькулятор в виде консольного меню
+	- сложение двух чисел
+	- вычитание двух чисел
+	- умножение двух чисел
+	- деление двух чисел
+
+5. Написать класс массив.
+	- нахождение минимального
+	- нахождение максимального
+	- заполнение случайными числами в диапазоне
+	- красивый вывод на экран {2 4 5 6}
+	-* увеличить размер
+	-* сделать сортировку массива
+	-* метод для сравнения с другим массивом
+
+6. Написать класс строка
+	- создание на основе массива символов
+	- вывод на экран
+	- конкатенация
+	- понижение регистра
+	- повышение регистра
+	- поиск подстроки
+	- выделение подстроки
+	- удаление пробелов
+	- метод для сравнения с другой строкой
+
+
+
+Material
+	Books 
+		6.1. Кэти Сьерра, Берт Бейтс. "Head First Java / Изучаем Java"  http://rutracker.org/forum/viewtopic.php?t=4212262
+		6.2. Шилдт Г. "Java. Полное руководство"  			http://padabum.com/d.php?id=17386
+		6.3. Кей Хорстманн, Гари Корнелл - Java 2. Том 1 		http://www.ex.ua/8600905
+		6.4. Брюс Эккель. "Философия Java"                              http://www.ex.ua/4884921
+		6.5. OCJP 7 										
+	
+
