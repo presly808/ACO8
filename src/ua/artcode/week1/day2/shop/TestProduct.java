@@ -19,7 +19,7 @@ public class TestProduct {
 
         System.out.println(product.asString());
 
-        Product product2 = new Product();
+        Product product2 = new Product(12,"Bread",10.45);
 
 
         System.out.println(product2.asString());

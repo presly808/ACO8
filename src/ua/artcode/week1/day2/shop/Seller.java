@@ -36,5 +36,8 @@ public class Seller {
                 id,fullname,age,salary);
     }
 
+    public static void testClass(){
+        System.out.println("Seeler class out");
+    }
 
 }

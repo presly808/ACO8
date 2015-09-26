@@ -16,7 +16,8 @@ public class TestSeller {
         seller2.initData(2, "Eva", 22, 1000);
         seller2.showInfo();
 
-        seller2.
+        Seller.testClass();
+
 
         Seller[] sellers = new Seller[10];
 
