@@ -9,7 +9,7 @@ public class Human {
     private int age;
     private String phone;
 
-    private ua.artcode.week2.day2.test.Address address;
+    private Address address;
 
     public Human(String name, int age, String phone) {
         this.name = name;
@@ -17,18 +17,18 @@ public class Human {
         this.phone = phone;
     }
 
-    public Human(String name, int age, String phone, ua.artcode.week2.day2.test.Address address) {
+    public Human(String name, int age, String phone, Address address) {
         this.name = name;
         this.age = age;
         this.phone = phone;
         this.address = address;
     }
 
-    public ua.artcode.week2.day2.test.Address getAddress() {
+    public Address getAddress() {
         return address;
     }
 
-    public void setAddress(ua.artcode.week2.day2.test.Address address) {
+    public void setAddress(Address address) {
         this.address = address;
     }
 
@@ -54,5 +54,9 @@ public class Human {
 
     public void setPhone(String phone) {
         this.phone = phone;
+    }
+
+    public String asString(){
+        return String.format("name %s, age %d", name,age);
     }
 }

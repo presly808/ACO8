@@ -6,14 +6,14 @@ public class Dog {
     private String name;
     private int age;
 
-    private ua.artcode.week2.day2.test.Human owner;
+    private Human owner;
 
     public Dog(String name, int age) {
         this.name = name;
         this.age = age;
     }
 
-    public Dog(String name, int age, ua.artcode.week2.day2.test.Human owner) {
+    public Dog(String name, int age, Human owner) {
         this.name = name;
         this.age = age;
         this.owner = owner;
@@ -35,11 +35,19 @@ public class Dog {
         this.age = age;
     }
 
-    public ua.artcode.week2.day2.test.Human getOwner() {
+    public Human getOwner() {
         return owner;
     }
 
-    public void setOwner(ua.artcode.week2.day2.test.Human owner) {
+    public void setOwner(Human owner) {
         this.owner = owner;
+    }
+    
+    public String asString(){
+        return String.format("name %s, age %d", name,age);
+    }
+
+    public String asStringWithOwner(){
+        return String.format("name %s, age %d, owner %s", name, age, owner.asString());
     }
 }

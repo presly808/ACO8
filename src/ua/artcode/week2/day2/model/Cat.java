@@ -8,9 +8,9 @@ public class Cat {
     private String name;
     private int age;
 
-    private ua.artcode.week2.day2.test.Address home;
+    private Address home;
 
-    private ua.artcode.week2.day2.test.Human owner;
+    private Human owner;
 
     public String getName() {
         return name;
@@ -28,19 +28,19 @@ public class Cat {
         this.age = age;
     }
 
-    public ua.artcode.week2.day2.test.Address getHome() {
+    public Address getHome() {
         return home;
     }
 
-    public void setHome(ua.artcode.week2.day2.test.Address home) {
+    public void setHome(Address home) {
         this.home = home;
     }
 
-    public ua.artcode.week2.day2.test.Human getOwner() {
+    public Human getOwner() {
         return owner;
     }
 
-    public void setOwner(ua.artcode.week2.day2.test.Human owner) {
+    public void setOwner(Human owner) {
         this.owner = owner;
     }
 }
