@@ -7,6 +7,17 @@ public class MyArray {
 
     private int[] arr;
 
+    public MyArray() {
+        arr = new int[16];
+    }
+
+    public MyArray(int[] arr) {
+        this.arr = arr;
+    }
+
+    public void addEl(int element){
+
+    }
 
     public int countTarget(int findTarget){
 
@@ -23,13 +34,19 @@ public class MyArray {
 
     public String asString(){
         String res = "{";
-        for (int i = 0; i < arr.length; i++) {
-
+        for (int i = 0; i < arr.length - 1; i++) {
+            res += arr[i] + ",";
         }
+
+        res += arr[arr.length - 1];
 
         res += "}";
 
         return res;
+    }
+
+    public int[] getArr(){
+        return arr;
     }
 
 
