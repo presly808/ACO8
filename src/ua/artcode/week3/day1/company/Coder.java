@@ -31,4 +31,12 @@ public class Coder extends Employee {
     public void writeCode(){
         System.out.println("coder writes code");
     }
+
+    public void work(){
+        System.out.println("work coder writes code");
+    }
+
+    public String toString(){
+        return "coder " + getName();
+    }
 }
