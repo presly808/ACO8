@@ -3,13 +3,17 @@ package ua.artcode.week3.day1.company;
 /**
  * Created by serhii on 10/3/15.
  */
-public class Coder extends Employee {
+public class Coder extends Employer {
 
     private String language;
 
     public Coder() {
         super();
         language = "Java";
+    }
+
+    public Coder(String name, int age, double salary){
+        super(name, age, salary);
     }
 
     private void testAccessToParent(){
@@ -32,6 +36,7 @@ public class Coder extends Employee {
         System.out.println("coder writes code");
     }
 
+    @Override
     public void work(){
         System.out.println("work coder writes code");
     }

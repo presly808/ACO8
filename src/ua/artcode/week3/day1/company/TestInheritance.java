@@ -12,8 +12,8 @@ public class TestInheritance {
         coder.writeCode();
         coder.work();
 
-        Employee employee = new Employee();
-        employee.work();
+        Employer employer = new Employer();
+        employer.work();
 
 
         // Abstraction

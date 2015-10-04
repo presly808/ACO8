@@ -10,7 +10,7 @@ public class TestAbstraction {
         Coder coder1 = new Coder();
 
         // abstraction -> inheritance
-        Employee empl = new Coder();
+        Employer empl = new Coder();
         empl.work();
 
         checkInstanceOf(empl);
@@ -23,12 +23,12 @@ public class TestAbstraction {
         // error Coder coder3 = new Employee();
     }
 
-    public static void checkInstanceOf(Employee employee){
-        if(employee instanceof Coder){
-            Coder coder = (Coder) employee;
+    public static void checkInstanceOf(Employer employer){
+        if(employer instanceof Coder){
+            Coder coder = (Coder) employer;
             coder.writeCode();
-        } else if(employee instanceof Tester){
-            Tester tester = (Tester) employee;
+        } else if(employer instanceof Tester){
+            Tester tester = (Tester) employer;
             tester.testCode();
         }
     }

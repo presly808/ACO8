@@ -8,8 +8,8 @@ public class TestPolymorphism {
 
     public static void main(String[] args) {
 
-        Employee employee = new Tester();
-        employee.work();
+        Employer employer = new Tester();
+        employer.work();
 
 
     }
