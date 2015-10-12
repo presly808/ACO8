@@ -1,0 +1,26 @@
+1. Interface, Abstract class -> abstract method
+	see examples and debug
+
+	search above words in Head First Java book
+	pages 195 - 265
+
+   SOLID have to remember by heart
+
+   Design Patterns -> Creational (Singleton,FactoryMethod,Builder)
+		   -> Behavioral (Command,Strategy,Observer,TemplateMethod)
+	    	   -> Structural (Adapter,Facade,Proxy,Decorator)
+
+   You have to learn first next patterns: Strategy, Observer, Command, Singleton, FactoryMethod
+	Use book Head First Design Patterns
+
+2. Debug or visualize all classwork code (dont forget about recursion)
+
+3. Do unfinished tasks
+
+4. implement tasks http://codingbat.com/java/Recursion-1
+
+5. read about Stack and Queue
+	see differences
+
+Wish you good week)
+
