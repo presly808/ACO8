@@ -1,25 +1,27 @@
 package ua.artcode.data_structures;
 
 
-public class ArrayQueue implements Queue {
+import java.util.Iterator;
+
+public class ArrayQueue<E> implements Queue<E> {
 
     private static final int DEFAULT_QUEUE_SIZE = 10;
 
-    private Object[] mas;
+    private E[] mas;
     private int head = 0;
     private int tail = 0;
     private int size = 0;
 
     public ArrayQueue(){
-        mas = new Object[DEFAULT_QUEUE_SIZE];
+        this(DEFAULT_QUEUE_SIZE);
     }
 
     public ArrayQueue(int size) {
-        mas = new Object[size];
+        mas = (E[]) new Object[size];
     }
 
-    @Override
-    public void addToTail(Object val) {
+
+    public void addToTail(E val) {
         if(size >= mas.length){
             System.err.println("queue is full");
         } else {
@@ -29,16 +31,39 @@ public class ArrayQueue implements Queue {
         }
     }
 
-    @Override
-    public Object takeFromHead() {
+
+    public E takeFromHead() {
         if(size == 0){
             return null;
         }
 
-        Object forRet = mas[head];
+        E forRet = mas[head];
         mas[head] = null;
         head++;
 
         return forRet;
+    }
+
+    @Override
+    public Iterator<E> iterator() {
+        return new ArrayQueueIterator();
+    }
+
+    // inner object depends on outer object
+    private class ArrayQueueIterator implements Iterator<E> { // inner class
+
+        private int curr = head;
+
+        @Override
+        public boolean hasNext() {
+            return curr < tail;
+        }
+
+        @Override
+        public E next() {
+            E forRet = mas[curr];
+            curr++;
+            return forRet;
+        }
     }
 }

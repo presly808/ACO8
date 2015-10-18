@@ -1,8 +1,10 @@
 package ua.artcode.data_structures;
 
 import java.util.Iterator;
+import java.util.NoSuchElementException;
 
-public class LinkedQueue implements Queue, Iterable {
+// TODO use generics, implement Iterator
+public class LinkedQueue implements Queue {
 
     private Node head;
     private Node tail;
@@ -21,6 +23,8 @@ public class LinkedQueue implements Queue, Iterable {
         }
     }
 
+
+
     @Override
     public Object takeFromHead() {
         if(size == 0){
@@ -35,6 +39,6 @@ public class LinkedQueue implements Queue, Iterable {
 
     @Override
     public Iterator iterator() {
-        return null;
+        throw new NoSuchMethodError("not iterator in queue");
     }
 }

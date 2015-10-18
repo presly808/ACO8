@@ -6,9 +6,7 @@ import ua.artcode.data_structures.Queue;
 
 import java.util.ArrayList;
 
-/**
- * Created by serhii on 17.10.15.
- */
+
 public class TestForEach {
 
 

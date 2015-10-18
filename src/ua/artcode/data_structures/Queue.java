@@ -3,10 +3,10 @@ package ua.artcode.data_structures;
 /**
  * Created by serhii on 17.10.15.
  */
-public interface Queue {
+public interface Queue<T> extends Iterable<T> {
 
-    void addToTail(Object val);
+    void addToTail(T val);
 
-    Object takeFromHead();
+    T takeFromHead();
 
 }
