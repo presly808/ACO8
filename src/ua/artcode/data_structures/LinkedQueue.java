@@ -24,10 +24,9 @@ public class LinkedQueue implements Queue {
     }
 
 
-
     @Override
     public Object takeFromHead() {
-        if(size == 0){
+        if (size == 0) {
             return null;
         }
 

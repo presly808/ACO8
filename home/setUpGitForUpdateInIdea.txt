@@ -1,0 +1,34 @@
+1) Download git https://git-scm.com/downloads 
+2) Install git 
+3) run git bush = Start->Search Git Bash -> run
+4) use command  'cd' to change location
+		'ls' show folder content
+		'pwd' show current location path
+		
+5) go to location where project will be cloned
+6) write command 'git clone <repository-url>'
+   example       'git clone https://github.com/presly808/ACO8.git'
+
+SET UP IDEA 
+1) tell idea about maven
+	- open global setting 'Ctrl+Alt+S'
+	- item 'Vesion Control' -> Git
+	- check 'Git executable path'
+	- press test for verify
+
+2) then activate git in IDEA
+	- VCS -> Enable Version Control Integration -> Choose Git -> Press Ok
+
+3) After above steps
+
+	use button 'update' in IDEA or shortcut 'Ctrl+T'
+	if you have rights, you can push your changes to server via 'Ctrl+K'
+	
+IF YOU WANNA BE A GIT GURU!!!
+1) https://try.github.io/levels/1/challenges/1 
+2) https://www.atlassian.com/git/tutorials/
+3) https://git-scm.com/book/en/v2
+
+video http://www.ex.ua/79601047 
+
+

@@ -1,0 +1,37 @@
+1. Dynamic(Recursive) data structures(based on Node)
+	Stack, Queue, Dequeu
+
+	Wrappers
+	Design Pattern - Iterator	
+	Generics	
+	Exceptions(unchecked, checked)
+
+	!!! Use visualisation and draw each step before coding
+        http://www.cs.usfca.edu/~galles/visualization/Algorithms.html
+        http://visualgo.net/list.html
+        http://visualgo.net/recursion.html
+
+2. Implement all methods in NodeUtils
+
+    implements all methods using
+    a) loop
+    b) recursion
+
+3. Comparable and Comparator
+	test method Arrays.sort
+
+3. Реализовать структуру данных Двунаправленную Очередь(Dequeue). НА ОСНОВЕ СВЯЗНОГО СПИСКА.
+       Переопределяем equals, toString, clone для структуры
+      	- добавить элемент в хвост
+      	- добавить элемент в голову
+      	- забрать элемент с головы
+      	- забрать элемент с хвоста
+      	- Поиск элемента по значению (сравнение через equals)
+       - Поменять местами первый и последний элементы
+      	- Поменять местами наибольший и наименьший элементы, в случае если реализован интерфейс Comparable
+      	- Отсортировать список, в случае если реализован интерфейс Comparable
+      	- Удалить повторяющиеся элементы из списка, в случае если реализован интерфейс Comparable
+      	* Перестроить элементы в обратном порядке
+      	* Реализовать итератор
+	
+
