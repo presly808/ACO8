@@ -14,8 +14,6 @@ public class TestMyServer {
             c.printStackTrace();
             System.out.println("reconnect to server");
         }
-
         System.out.println("end of code");
-
     }
 }
