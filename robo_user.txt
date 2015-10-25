@@ -1,0 +1,4 @@
+model=Chappie
+health=70
+power=100
+price=30000.0

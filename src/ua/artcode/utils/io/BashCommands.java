@@ -2,6 +2,7 @@ package ua.artcode.utils.io;
 
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
 import java.io.PrintWriter;
 import java.util.Scanner;
 
@@ -18,12 +19,16 @@ public class BashCommands implements IBashCommands {
 
     @Override
     public String less(String filePath) {
+        StringBuilder sb = new StringBuilder();
         try {
             Scanner sc = new Scanner(new File(filePath));
+            while(sc.hasNextLine()){
+                sb.append(sc.nextLine()).append("\n");
+            }
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
-        return null;
+        return sb.toString();
     }
 
     @Override
@@ -38,10 +43,17 @@ public class BashCommands implements IBashCommands {
 
     @Override
     public String writeInto(String filePath, String source) {
+        PrintWriter pw = null;
         try {
-            PrintWriter pw = new PrintWriter(filePath);
+            pw = new PrintWriter(new FileOutputStream(filePath, false));
+            pw.println(source);
+            pw.flush();
         } catch (FileNotFoundException e) {
             e.printStackTrace();
+        } finally {
+            if(pw != null){
+                pw.close(); // call flush
+            }
         }
         return null;
     }
