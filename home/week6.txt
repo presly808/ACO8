@@ -1,0 +1,33 @@
+1. 1. Topics
+    Algorithms              Algorithm complexity
+        search              Time           Data
+            linear search - O(N)            1
+            binary search - O(logN)         1
+        sort
+            bubble sort    |
+            insertion sort |} O(N^2)        1
+            selection sort |
+		
+            merge sort      O(N*logN)       O(N)
+            quick sort      O(N*logN)       1
+		see visualization of above algorithms
+      
+   Streams 
+   byte			char	
+   InputStream		Reader
+   OutputStream		Writer
+
+	Scanner and PrintWriter
+
+   Serialization, Deserialization - Java
+   interface Serializable
+
+   Design Pattern - MVC,Decorator,Adapter
+
+2. Debug and test all classwork
+
+3. Finish Market logic
+
+4. Finish prev. homework
+
+

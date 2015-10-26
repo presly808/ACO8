@@ -1,0 +1,19 @@
+Hello) my dear friend, I am happy, that you decided to learn linux. 
+First you will feel uncomfortable, but after some time you won't realize life without linux. 
+it will be simple controllable and interesting system.
+
+First steps. 
+1) Learn basics of Bash(Command Line Terminal)
+https://www.codecademy.com/courses/learn-the-command-line
+
+2) Good and simple tutorial 
+http://linuxcommand.org/lc3_learning_the_shell.php
+
+Other material
+https://portal.tacc.utexas.edu/c/document_library/get_file?uuid=ed6c16e9-bcbc-4b70-9311-5273b09508b8&groupId=13601
+https://mygov.in/sites/default/files/user_submission/920565a3edaa057078bcfc5b3966568c.pdf
+http://cli.learncodethehardway.org/bash_cheat_sheet.pdf
+http://linoxide.com/linux-command/essential-linux-basic-commands/
+
+3) If you have questions, i am ready to help
+(Do two first steps)
