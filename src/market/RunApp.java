@@ -6,9 +6,7 @@ import market.model.Admin;
 import market.model.MarketDB;
 import market.view.AdminView;
 
-/**
- * Created by serhii on 25.10.15.
- */
+
 public class RunApp {
 
     public static void main(String[] args) {
