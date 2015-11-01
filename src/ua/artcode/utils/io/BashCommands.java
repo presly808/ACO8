@@ -18,7 +18,11 @@ public class BashCommands implements IBashCommands {
     }
 
     @Override
-    public String less(String filePath) {
+    public String less(String filePath) throws FileNotFoundException {
+        if(!new File(filePath).exists())
+            throw new FileNotFoundException("file with name " + filePath + " dosen't exists");
+
+
         StringBuilder sb = new StringBuilder();
         try {
             Scanner sc = new Scanner(new File(filePath));
@@ -42,7 +46,7 @@ public class BashCommands implements IBashCommands {
     }
 
     @Override
-    public String writeInto(String filePath, String source) {
+    public String writeInto(String filePath, String source)  {
         PrintWriter pw = null;
         try {
             pw = new PrintWriter(new FileOutputStream(filePath, false));

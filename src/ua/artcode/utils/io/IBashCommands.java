@@ -1,5 +1,7 @@
 package ua.artcode.utils.io;
 
+import java.io.FileNotFoundException;
+
 /**
  * Created by serhii on 24.10.15.
  */
@@ -7,7 +9,7 @@ public interface IBashCommands {
 
 
     String ls(String dirPath);
-    String less(String filePath);
+    String less(String filePath) throws FileNotFoundException;
     String find(String dirPath, String keyword);
     String touch(String filePath);
     // see '>'
