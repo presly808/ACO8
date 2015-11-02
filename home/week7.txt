@@ -1,0 +1,30 @@
+1. pattern MVC, Swing
+
+Class Hierarchy
+http://www.falkhausen.de/download/diagram/img/javax.swing.JComponents.gif
+
+2. Git + IDEA
+	see pdf notes in resources/serhii
+
+3. Task
+resources/serhii/oop-task-market.pdf
+
+4. Additional 
+	- Implement json serialization while saving all data into a file
+	- Admin can register new users(admin,seller)
+	- track seller work hours
+	- Add to search(bills, users, products) functionality filter, it help do searching with various criterias
+		Example for users list
+		*show only sellers, admins
+		*make order(sort) for items by some criteria(name,id,work hours)
+		*add exclude, include filters
+				
+
+	!You can extend application, your creativity will be a plus 
+
+5. Some git recommendation 
+	Several little commits better than one BIG:(
+	Commit must be valid(without compilation error)
+	Write clear and informative messages for commits
+
+Winner gets a gift)))
