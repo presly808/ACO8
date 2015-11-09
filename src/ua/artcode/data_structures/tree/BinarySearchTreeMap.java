@@ -7,13 +7,13 @@ import java.util.Set;
 /**
  * Created by serhii on 08.11.15.
  */
-public class BinarySearchTree<K, V> extends MyAbstractMap<K, V> {
+public class BinarySearchTreeMap<K, V> extends MyAbstractMap<K, V> {
 
 
     private MapTreeNode root;
     private Comparator<K> keyComparator;
 
-    public BinarySearchTree(Comparator<K> keyComparator) {
+    public BinarySearchTreeMap(Comparator<K> keyComparator) {
         this.keyComparator = keyComparator;
     }
 
@@ -24,17 +24,45 @@ public class BinarySearchTree<K, V> extends MyAbstractMap<K, V> {
 
     @Override
     public boolean isEmpty() {
-        return false;
+        return root != null;
     }
 
     @Override
     public boolean containsKey(Object key) {
-        return false;
+        return find((K)key, root) != null;
     }
 
+    /**
+     *
+     *
+     * @throws CastClassException if key input other type
+     * */
     @Override
     public V get(Object key) {
-        return null;
+
+        MapTreeNode found = find((K)key, root);
+
+        return found != null ? found.entry.value : null;
+    }
+
+    private MapTreeNode find(K key, MapTreeNode curr){
+
+        if(curr == null){
+            return null;
+        }
+
+        int compareRes = keyComparator.compare(key, curr.entry.key);
+
+        if(compareRes < 0){
+            return find(key, curr.lChild);
+        } else if(compareRes > 0){
+            return find(key, curr.rChild);
+        } else {
+            return curr;
+        }
+
+        //return compareRes == 0 ? curr : compareRes < 0 ? find(key, curr.lChild) : find(key,curr.rChild);
+
     }
 
     @Override
@@ -98,6 +126,15 @@ public class BinarySearchTree<K, V> extends MyAbstractMap<K, V> {
             this.key = key;
             this.value = value;
         }
+
+        @Override
+        public String toString() {
+            final StringBuilder sb = new StringBuilder("Entry{");
+            sb.append("key=").append(key);
+            sb.append(", value=").append(value);
+            sb.append('}');
+            return sb.toString();
+        }
     }
 
     private class MapTreeNode {
@@ -114,5 +151,21 @@ public class BinarySearchTree<K, V> extends MyAbstractMap<K, V> {
             this.parent = parent;
             this.rChild = rChild;
         }
+    }
+
+    public String toString(MapTreeNode curr){
+
+        if(curr == null){
+            return "";
+        }
+
+
+        return toString(curr.lChild) + curr.entry + toString(curr.rChild);
+
+    }
+
+    @Override
+    public String toString() {
+        return toString(root);
     }
 }
